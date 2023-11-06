@@ -3,6 +3,11 @@ import Hero from "@/components/main/Hero";
 import Projects from "@/components/main/Projects";
 import Skills from "@/components/main/Skills";
 import Footer from "@/components/main/Footer";
+import Team from "@/components/main/Team";
+import RoadMap from "@/components/main/RoadMap";
+import Tokenomy from "@/components/main/Tokenomy";
+
+
 import Image from "next/image";
 
 export default function Home() {
@@ -13,6 +18,9 @@ export default function Home() {
         <Skills />
         <Encryption />
         <Projects />
+        <Team />
+        <RoadMap />
+        <Tokenomy />
         <Footer />
       </div>
     </main>

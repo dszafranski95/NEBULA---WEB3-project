@@ -87,3 +87,28 @@ html {
   position: relative; /* Required for z-index to work */
   z-index: 25; /* Higher than the canvas */
 }
+/* Assuming you're using a global CSS file */
+.stake-button {
+  color: white;
+  background-color: rgba(138, 43, 226, 0.7); /* Violet with transparency */
+  border: solid 1px #8a2be2; /* Border color */
+  transition: ease-in 200ms;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.stake-button {
+  /* Existing styles */
+  position: relative; /* Needed to enable z-index */
+  z-index: 100; /* Example value, ensure this is higher than the StarsCanvas z-index */
+}
+
+.stake-button:hover {
+  background-color: rgba(138, 43, 226, 0.9); /* Darker violet on hover */
+  color: white;
+  border-color: transparent;
+}
+

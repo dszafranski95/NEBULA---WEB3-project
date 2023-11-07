@@ -6,6 +6,7 @@ import Footer from "@/components/main/Footer";
 import Team from "@/components/main/Team";
 import RoadMap from "@/components/main/RoadMap";
 import Tokenomy from "@/components/main/Tokenomy";
+import Accordion from "@/components/main/Accordion";
 
 
 import Image from "next/image";
@@ -21,6 +22,7 @@ export default function Home() {
         <Team />
         <RoadMap />
         <Tokenomy />
+        <Accordion />
         <Footer />
       </div>
     </main>

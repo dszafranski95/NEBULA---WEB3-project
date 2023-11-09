@@ -7,7 +7,8 @@ import Team from "@/components/main/Team";
 import RoadMap from "@/components/main/RoadMap";
 import Tokenomy from "@/components/main/Tokenomy";
 import Accordion from "@/components/main/Accordion";
-
+import TokenTable from "@/components/main/TokenTable";
+import Choice from "@/components/main/Choice";
 
 import Image from "next/image";
 
@@ -16,11 +17,11 @@ export default function Home() {
     <main className="h-full w-full">
       <div className="flex flex-col gap-20">
         <Hero />
-        <Skills />
-        <Encryption />
+        <Choice />
         <Projects />
         <Team />
         <RoadMap />
+        <TokenTable />
         <Tokenomy />
         <Accordion />
         <Footer />

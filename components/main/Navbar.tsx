@@ -59,7 +59,10 @@ const Navbar = () => {
     <a href="#projects" className="cursor-pointer hover:text-purple-500">
       About Us
     </a>
-    <a className="cursor-pointer hover:text-purple-500">
+    <a href="#projects" className="cursor-pointer hover:text-purple-300">
+      Whitepaper
+    </a>
+    <a className="cursor-pointer hover:text-red-300">
       <WalletConnect />
     </a>
 

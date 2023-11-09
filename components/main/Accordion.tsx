@@ -43,35 +43,36 @@ const AccordionSection: React.FC<AccordionSectionProps> = ({ title, content }) =
 // Define the main Accordion component
 const Accordion: React.FC = () => {
   return (
-    <div className="m-2 space-y-2">
-      {/* Add a big FAQ heading above the first accordion */}
-      <h1 className="text-center text-3xl font-bold my-5 text-white">FAQ</h1>
-      {/* Accordion sections for HTML, CSS, and JavaScript */}
-      <AccordionSection
-        title="Can I stake my $NEBULA?"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <AccordionSection
-        title="Where can I buy $NEBULA token?"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <AccordionSection
-        title="Will $NEBULA be burned?"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-            <AccordionSection
-        title="What fees on NEBULA ecosystem?"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <AccordionSection
-        title="What is Nebula ecosystem and what problem resolves?"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-      <AccordionSection
-        title="Is NEBULA Layer2 or Sidechain?"
-        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
-    </div>
+<div className="m-2 space-y-2">
+  {/* Add a big FAQ heading above the first accordion */}
+  <h1 className="text-center text-3xl font-bold my-5 text-white">FAQ</h1>
+  {/* Accordion sections for NEBULA ecosystem topics */}
+  <AccordionSection
+    title="Can I stake my $NEBULA?"
+    content="Yes, you can stake your $NEBULA tokens to help secure the network and, in return, receive staking rewards. By staking, you contribute to the network's robustness and gain a chance to participate in governance decisions."
+  />
+  <AccordionSection
+    title="Where can I buy $NEBULA token?"
+    content="You can purchase $NEBULA tokens on several exchanges, including Decentralized Exchanges (DEXs) and Centralized Exchanges (CEXs). Always ensure you're using a reputable exchange and take appropriate security measures when trading."
+  />
+  <AccordionSection
+    title="Will $NEBULA be burned?"
+    content="The NEBULA ecosystem implements a token burn mechanism to ensure the deflationary nature of $NEBULA tokens. A certain percentage of transaction fees is burned, reducing the overall supply and potentially increasing the token value."
+  />
+  <AccordionSection
+    title="What fees on NEBULA ecosystem?"
+    content="Transaction fees within the NEBULA ecosystem are designed to be competitive and are used for network operations, including rewarding validators and supporting the ongoing development of the ecosystem."
+  />
+  <AccordionSection
+    title="What is Nebula ecosystem and what problem resolves?"
+    content="The Nebula ecosystem is a decentralized platform that aims to solve scalability and interoperability issues in blockchain technology. It provides a seamless environment for deploying decentralized applications (dApps) and smart contracts, with a focus on user experience and developer friendliness."
+  />
+  <AccordionSection
+    title="Is NEBULA Layer2 or Sidechain?"
+    content="NEBULA functions as a Layer 2 scaling solution, operating on top of an existing blockchain to provide faster transactions and lower fees. Unlike sidechains, Layer 2 solutions inherit the security model of the underlying blockchain, which in the case of NEBULA, enhances its reliability and security."
+  />
+</div>
+
   );
 };
 

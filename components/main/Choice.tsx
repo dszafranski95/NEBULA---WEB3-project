@@ -4,11 +4,12 @@ const Choice = () => {
   return (
     <>
       {/* Smart links section */}
-      <div className="px-4 bg-[#030303] mb-8 py-8 rounded-3xl mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
+      <div className="px-4 bg-[#030303] mb-8 py-8 rounded-3xl mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8" id="buy-token">
+        <div className="flex flex-col items-center justify-between w-full mb-10 lg:flex-row ">
           <div className="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
             <div className="max-w-xl mb-6">
-              <h2 className="font-sans text-3xl sm:mt-0 mt-6 font-medium tracking-tight text-white sm:text-4xl sm:leading-none max-w-lg mb-6">
+              <h2 className="font-sans text-3xl sm:mt-0 mt-6 font-medium tracking-tight text-white sm:text-4xl sm:leading-none max-w-lg mb-6"
+              >
                 Don't have $NEBULA yet?
               </h2>
               <p className="text-gray-300 text-base md:text-lg">

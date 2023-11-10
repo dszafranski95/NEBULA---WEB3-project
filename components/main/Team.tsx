@@ -2,7 +2,10 @@ import React from 'react';
 
 const Team = () => {
   return (
-    <div className="w-full bg-[#030303]">
+    <div className="w-full bg-[#030303]"
+    id="team"
+    >
+        
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
             <div className="text-center pb-12">
 

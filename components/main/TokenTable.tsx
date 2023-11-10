@@ -35,7 +35,7 @@ const StakeButton = () => {
                         
                         <div className="h-50 ml-4 flex w-auto flex-col justify-center">
                         <p className="font-dm text-sm font-medium text-gray-600">Staking</p>
-                        <h4 className="text-xl font-bold text-navy-700 dark:text-white">Earn 10%</h4>
+                        <h4 className="text-xl font-bold font-dm text-sm font-medium text-gray-800">Earn 10%</h4>
                         </div>
                     </div>
                     <div className="relative flex flex-grow !flex-row flex-col items-center rounded-[10px] rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
@@ -61,7 +61,7 @@ const StakeButton = () => {
                         </div>
                         <div className="h-50 ml-4 flex w-auto flex-col justify-center">
                         <p className="font-dm text-sm font-medium text-gray-600">Make a choice</p>
-                        <h4 className="text-xl font-bold text-navy-700 dark:text-white">join DAO</h4>
+                        <h4 className="text-xl font-bold font-dm text-sm font-medium text-gray-800">join DAO</h4>
                         </div>
                     </div>
                     <div className="relative flex flex-grow !flex-row flex-col items-center rounded-[10px] rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
@@ -86,7 +86,7 @@ const StakeButton = () => {
                         </div>
                         <div className="h-50 ml-4 flex w-auto flex-col justify-center">
                         <p className="font-dm text-sm font-medium text-gray-600">Burn Token</p>
-                        <h4 className="text-xl font-bold text-navy-700 dark:text-white">Deflation</h4>
+                        <h4 className="text-xl font-bold font-dm text-sm font-medium text-gray-800">Deflation</h4>
                         </div>
                     </div>
                     <div className="relative flex flex-grow !flex-row flex-col items-center rounded-[10px] rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
@@ -111,7 +111,7 @@ const StakeButton = () => {
                         </div>
                         <div className="h-50 ml-4 flex w-auto flex-col justify-center">
                         <p className="font-dm text-sm font-medium text-gray-600">Get NFT</p>
-                        <h4 className="text-xl font-bold text-navy-700 dark:text-white">Burn & Get NFT</h4>
+                        <h4 className="text-xl font-bold font-dm text-sm font-medium text-gray-800">Burn & Get NFT</h4>
                         </div>
                     </div>
                     <div className="relative flex flex-grow !flex-row flex-col items-center rounded-[10px] rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
@@ -136,7 +136,7 @@ const StakeButton = () => {
                         </div>
                         <div className="h-50 ml-4 flex w-auto flex-col justify-center">
                         <p className="font-dm text-sm font-medium text-gray-600">Products for tokens</p>
-                        <h4 className="text-xl font-bold text-navy-700 dark:text-white">Buy Products</h4>
+                        <h4 className="text-xl font-bold font-dm text-sm font-medium text-gray-800">Buy Products</h4>
                         </div>
                     </div>
                     <div className="relative flex flex-grow !flex-row flex-col items-center rounded-[10px] rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none">
@@ -160,7 +160,7 @@ const StakeButton = () => {
                         </div>
                         <div className="h-50 ml-4 flex w-auto flex-col justify-center">
                         <p className="font-dm text-sm font-medium text-gray-600">Dapps</p>
-                        <h4 className="text-xl font-bold text-navy-700 dark:text-white">Own Dapp</h4>
+                        <h4 className="text-xl font-bold font-dm text-sm font-medium text-gray-800">Own Dapp</h4>
                         </div>
                     </div>
                     </div>  

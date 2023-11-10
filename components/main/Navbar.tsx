@@ -44,22 +44,19 @@ const Navbar = () => {
 
         <div className="hidden md:flex w-[700px] h-full flex flex-row items-center justify-between mr-20">
   <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[30px] py-[10px] rounded-full text-gray-200 space-x-5 hover:text-white transition-colors duration-200">
-    <a href="#skills" className="cursor-pointer hover:text-red-500">
+    <a href="#about" className="cursor-pointer hover:text-red-500">
       About
     </a>
-    <a href="#skills" className="cursor-pointer hover:text-blue-500">
+    <a href="#team" className="cursor-pointer hover:text-blue-500">
       Team
     </a>
-    <a href="#skills" className="cursor-pointer hover:text-green-500">
+    <a href="#buy-token" className="cursor-pointer hover:text-green-500">
       Buy Token
     </a>
     <a href="#projects" className="cursor-pointer hover:text-yellow-500">
       Stake
     </a>
-    <a href="#projects" className="cursor-pointer hover:text-purple-500">
-      About Us
-    </a>
-    <a href="#projects" className="cursor-pointer hover:text-purple-300">
+    <a href="/whitepaper" className="cursor-pointer hover:text-purple-300">
       Whitepaper
     </a>
     <a className="cursor-pointer hover:text-red-300">
@@ -82,7 +79,7 @@ const Navbar = () => {
                 <a href="#skills" className="text-gray-300 sm:font-light cursor-pointer hover:text-gray-500">
                     About
                 </a>
-                <a href="#skills" className="text-gray-300 sm:font-light cursor-pointer hover:text-gray-500">
+                <a href="#team" className="text-gray-300 sm:font-light cursor-pointer hover:text-gray-500">
                     Team
                 </a>
                 <a href="#skills" className="text-gray-300 sm:font-light cursor-pointer hover:text-gray-500">

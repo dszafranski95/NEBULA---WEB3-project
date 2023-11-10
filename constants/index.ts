@@ -25,7 +25,20 @@ export const Skill_data = [
   ];
   
   
-  
+  export const NavLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Whitepaper",
+      link: "/whitepaper",
+    },
+    {
+      name: "Stake",
+      link: "/stake",
+    },
+  ];
   
   
   

@@ -8,9 +8,11 @@ import Footer from "@/components/main/Footer"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Space Portfolio',
-  description: 'This is my portfolio',
+  title: 'InnoTechCloud - Cloud Storage Solutions, Data Management & Security',
+  description: "Discover InnoTechCloud's cutting-edge cloud storage solutions, offering scalable disk space, secure data backups, and efficient file synchronization for diverse industries...",
 }
+
+
 
 export default function RootLayout({
   children,
@@ -18,9 +20,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-[#030303] overflow-y-scroll overflow-x-hidden`}
-    >
+<html lang="en">
+<body className={`${inter.className} bg-gradient-to-r from-[#BCE3F9] via-[#B2D7EC] to-[#A9CCE0] overflow-y-scroll overflow-x-hidden`}>
+
+
+
+
+      
         {/* <StarsCanvas /> */}
         <Navbar />
         {children}

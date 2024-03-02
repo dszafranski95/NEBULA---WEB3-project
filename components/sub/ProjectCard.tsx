@@ -18,9 +18,9 @@ const ProjectCard = ({ src, title, description }: Props) => {
         className="w-full object-contain"
       />
 
-      <div className="relative p-4">
-        <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-gray-300">{description}</p>
+      <div className="relative p-4 bg-white">
+        <h1 className="text-2xl font-semibold text-black">{title}</h1>
+        <p className="mt-2 text-gray-800">{description}</p>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const SkillText = () => {
         variants={slideInFromRight(0.5)}
         className='cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center'
         >
-            "A simple fact that is hard to learn is that the time to save money is when you have some." - Joe Moore
+            A simple fact that is hard to learn is that the time to save money is when you have some. - Joe Moore
         </motion.div>
     </div>
   )

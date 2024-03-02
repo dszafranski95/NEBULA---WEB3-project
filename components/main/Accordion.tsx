@@ -3,6 +3,12 @@
 
 import React, { useState } from 'react';
 
+// Add custom styles for the background and text colors
+const customStyles = {
+  backgroundColor: 'white', // Replace with your hex color code for background
+  color: '#111', // Replace with your hex color code for text if necessary
+};
+
 // Define the props for each accordion section
 interface AccordionSectionProps {
   title: string;
@@ -16,7 +22,8 @@ const AccordionSection: React.FC<AccordionSectionProps> = ({ title, content }) =
 
   return (
     <div
-      className="group flex flex-col gap-2 rounded-lg bg-black p-5 text-white"
+      style={customStyles}
+      className="group flex flex-col gap-2 rounded-lg p-5"
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && setIsOpen(!isOpen)}
       onClick={() => setIsOpen(!isOpen)}
@@ -43,36 +50,38 @@ const AccordionSection: React.FC<AccordionSectionProps> = ({ title, content }) =
 // Define the main Accordion component
 const Accordion: React.FC = () => {
   return (
-<div className="m-2 space-y-2">
-  {/* Add a big FAQ heading above the first accordion */}
-  <h1 className="text-center text-3xl font-bold my-5 text-white">FAQ</h1>
-  {/* Accordion sections for NEBULA ecosystem topics */}
-  <AccordionSection
-    title="Can I stake my $NEBULA?"
-    content="Yes, you can stake your $NEBULA tokens to help secure the network and, in return, receive staking rewards. By staking, you contribute to the network's robustness and gain a chance to participate in governance decisions."
-  />
-  <AccordionSection
-    title="Where can I buy $NEBULA token?"
-    content="You can purchase $NEBULA tokens on several exchanges, including Decentralized Exchanges (DEXs) and Centralized Exchanges (CEXs). Always ensure you're using a reputable exchange and take appropriate security measures when trading."
-  />
-  <AccordionSection
-    title="Will $NEBULA be burned?"
-    content="The NEBULA ecosystem implements a token burn mechanism to ensure the deflationary nature of $NEBULA tokens. A certain percentage of transaction fees is burned, reducing the overall supply and potentially increasing the token value."
-  />
-  <AccordionSection
-    title="What fees on NEBULA ecosystem?"
-    content="Transaction fees within the NEBULA ecosystem are designed to be competitive and are used for network operations, including rewarding validators and supporting the ongoing development of the ecosystem."
-  />
-  <AccordionSection
-    title="What is Nebula ecosystem and what problem resolves?"
-    content="The Nebula ecosystem is a decentralized platform that aims to solve scalability and interoperability issues in blockchain technology. It provides a seamless environment for deploying decentralized applications (dApps) and smart contracts, with a focus on user experience and developer friendliness."
-  />
-  <AccordionSection
-    title="Is NEBULA Layer2 or Sidechain?"
-    content="NEBULA functions as a Layer 2 scaling solution, operating on top of an existing blockchain to provide faster transactions and lower fees. Unlike sidechains, Layer 2 solutions inherit the security model of the underlying blockchain, which in the case of NEBULA, enhances its reliability and security."
-  />
-</div>
-
+    <div 
+      id="faq" 
+      className="m-2 space-y-2 w-11/12 md:w-8/12 lg:w-7/12 xl:w-6/12 mx-auto" // This sets the max width and centers the FAQ
+    >
+      {/* Add a big FAQ heading above the first accordion */}
+      <h1 className="text-center text-3xl font-bold my-5 text-transparent bg-clip-text bg-gradient-to-r from-[#127C8C] to-[#2FAAC6]">FAQ</h1>
+      {/* Accordion sections for InnoTechCloud topics */}
+      <AccordionSection
+        title="What services does InnoTechCloud offer?"
+        content="InnoTechCloud offers a range of services including Cloud Disk Space, Automatic Data Backups, File Synchronization and Sharing, Data Archiving Services, Disk Space Management Services, Data Lifecycle Management, and Cloud Data Encryption."
+      />
+      <AccordionSection
+        title="How does InnoTechCloud ensure data security?"
+        content="Data security is a top priority at InnoTechCloud. We use advanced encryption techniques and automatic backup systems to ensure the security and operational continuity of your data."
+      />
+      <AccordionSection
+        title="Can I scale my resources with InnoTechCloud?"
+        content="Yes, our cloud solutions are highly flexible and scalable. You can easily scale your resources up or down according to your evolving business needs and requirements."
+      />
+      <AccordionSection
+        title="What makes InnoTechCloud different from other cloud service providers?"
+        content="InnoTechCloud stands out due to its use of advanced technology, commitment to security and reliability, continuous innovation in services, and the global reach of our solutions."
+      />
+      <AccordionSection
+        title="What industries does InnoTechCloud cater to?"
+        content="We support a variety of industries, from small startups to large corporations, providing them with tools for storing, managing, and analyzing data."
+      />
+      <AccordionSection
+        title="How does InnoTechCloud contribute to sustainable development?"
+        content="InnoTechCloud is committed to sustainable development. We minimize our environmental impact through energy-efficient practices and innovative business strategies."
+      />
+    </div>
   );
 };
 

@@ -3,48 +3,56 @@ import ProjectCard from "../sub/ProjectCard";
 
 const Projects = () => {
   return (
-    <div
-      className="flex flex-col items-center justify-center py-20"
-      id="about"
-    >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        $NEBULA Ecosystem
-      </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/layer2.png"
-          title="$NEBULA Layer 2 Scaling"
-          description="Explore $NEBULA's Layer 2 solutions, offering enhanced scalability for Ethereum with reduced fees, faster transactions, and increased throughput."
-        />
-        <ProjectCard
-          src="/defi.png"
-          title="DeFi Integration Module"
-          description="Dive into $NEBULA's DeFi strategies, integrating with leading protocols to offer innovative financial products on top of its robust Layer 2 framework."
-        />
-        <ProjectCard
-          src="/Bridge.png"
-          title="Cross-Chain Bridge"
-          description="Bridging assets across blockchains, $NEBULA's cross-chain bridge facilitates seamless transfers between Ethereum and other leading networks."
-        />
-      </div>
-
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/staking.png"
-          title="$NEBULA Staking Platform"
-          description="Stake your $NEBULA tokens to secure the network and earn rewards. Our staking platform is designed for maximum efficiency and ease of use."
-        />
-        <ProjectCard
-          src="/nft.png"
-          title="NFT Marketplace Expansion"
-          description="Enter the $NEBULA NFT marketplace, where Layer 2 technology enables creators and collectors to interact with low fees and instant transactions."
-        />
-        <ProjectCard
-          src="/dao.png"
-          title="Decentralized Governance"
-          description="Take part in the governance of $NEBULA's Layer 2 protocol, where token holders can vote on upgrades and proposals, steering the project's future."
-        />
-      </div>
+    <div className="w-full bg-gradient-to-r from-[#BCE3F9] via-[#B2D7EC] to-[#A9CCE0]" id="projects">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <div className="text-center pb-12">
+          <h1 id="why-us" className="text-transparent bg-clip-text bg-gradient-to-r from-[#127C8C] to-[#2FAAC6] font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-black">
+            Why Us?
+          </h1>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <ProjectCard
+            src="/tech.png"
+            title="Advanced Technology"
+            description="We utilize the latest innovations in cloud computing to provide our clients with the best and most efficient solutions."
+          />
+          <ProjectCard
+            src="/security.png"
+            title="Security and Reliability"
+            description="Data security is our top priority. Our services are secured with advanced encryption technologies and continuous backup systems."
+          />
+          <ProjectCard
+            src="/flexibility.png"
+            title="Flexibility and Scalability"
+            description="Our cloud solutions are flexible and can be tailored to evolving business needs and requirements, allowing for the scaling of resources up or down as needed."
+          />
+          <ProjectCard
+            src="/innovation.png"
+            title="Innovation in Services"
+            description="We continually develop our services to stay abreast of the latest trends and technologies, thus ensuring our clients have access to the most cutting-edge solutions."
+          />
+          <ProjectCard
+            src="/experience.png"
+            title="Experience and Trust"
+            description="We have years of experience in the industry and the trust of many satisfied clients who rely on our services to run their businesses. We know what we do well."
+          />
+          <ProjectCard
+            src="/green.png"
+            title="Sustainable Development"
+            description="We are committed to sustainable development, minimizing our environmental impact through energy efficiency and innovative business practices."
+          />
+          <ProjectCard
+            src="/reach.png"
+            title="Global Reach"
+            description="Our services are available globally, enabling us to serve clients all over the world, regardless of their location."
+          />
+          <ProjectCard
+            src="/tailored.png"
+            title="Tailored Business Solutions"
+            description="Our approach is to create bespoke solutions that cater to the specific needs of each client."
+          />
+        </div>
+      </section>
     </div>
   );
 };

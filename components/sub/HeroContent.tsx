@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useRouter } from 'next/navigation'; // Import the useRouter hook
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -13,17 +14,34 @@ import Image from "next/image";
 const upDownAnimation = {
   hidden: { y: 0 },
   visible: {
-    y: [-10, 10, -10, 10, -10], // move up and down by 10 pixels
+    y: [-10, 10, -10, 10, -10],
     transition: {
-      duration: 10, // adjust the duration to control the speed of the movement
+      duration: 10,
       ease: "easeInOut",
-      repeat: Infinity, // loop the animation indefinitely
+      repeat: Infinity,
     },
   },
 };
 
+const rotateAnimation = {
+  rotate: {
+    rotate: 360,
+    transition: {
+      duration: 30,
+      ease: "linear",
+      repeat: Infinity,
+    }
+  }
+};
 
 const HeroContent = () => {
+  const router = useRouter(); // Initialize the router
+
+  // Function to handle click on 'Learn More'
+  const handleLearnMoreClick = () => {
+    router.push('/project'); // Navigate to '/project' route
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -31,29 +49,34 @@ const HeroContent = () => {
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
+      <motion.div
           variants={slideInFromLeft(0.5)}
           className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
-            Find out the
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#127C8C] to-[#2FAAC6]">
               {" "}
-              $NEBULA{" "}
+              our priority{" "}
             </span>
-            ecosystem.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1D9EC1] to-[#5A5E77]">
+              {" "}
+              is to{" "}
+            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fff] to-[snow]">
+
+            provide cloud{" "}
+            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#111] to-[#444]">
+              {" "}
+              solutions.{" "}
+            </span>
           </span>
         </motion.div>
 
-        <motion.p
-          variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
-        >
-          NEBULA, as a Layer 2 solution, leverages Ethereum's security while greatly enhancing transaction speed and efficiency. 
-        </motion.p>
         <motion.a
+          onClick={handleLearnMoreClick}
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 text-center text-white cursor-pointer rounded-lg max-w-[200px] bg-[#24687A] hover:bg-[#42687A] transition-colors duration-300"
         >
           Learn More!
         </motion.a>
@@ -63,12 +86,12 @@ const HeroContent = () => {
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
-        <motion.div variants={upDownAnimation}>
+        <motion.div variants={rotateAnimation} animate="rotate">
           <Image
-            src="/blockchain.png"
+            src="/pngwing.com(18).png"
             alt="work icons"
-            height={900}
-            width={650}
+            height={500}
+            width={450}
           />
         </motion.div>
       </motion.div>

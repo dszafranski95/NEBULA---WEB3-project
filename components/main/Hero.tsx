@@ -1,20 +1,23 @@
-import React from 'react'
-import HeroContent from '../sub/HeroContent'
+"use client";
+import React from 'react';
+import HeroContent from '../sub/HeroContent';
 
 const Hero = () => {
   return (
     <div className='relative flex flex-col h-full w-full'>
-        <video
-            autoPlay
-            muted
-            loop
-            className='rotate-180 absolute top-[-340px] left-0 z-[1] w-full h-full object-cover'
-        >
-            <source src='/moon.mp4' type='video/webm' />   
-        </video>
-        <HeroContent />
+      <img
+        src='/chmura1.png'
+        alt='Background'
+        className='absolute top-0 left-0 z-0 object-cover'
+        style={{ 
+            width: 'calc(100% - 20px)', // zmniejsza szerokość o 20px
+            height: 'calc(100% - 10px)', // zmniejsza wysokość o 20px
+            margin: '10px' // centruje obraz po zmniejszeniu
+        }}
+      />
+      <HeroContent />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
